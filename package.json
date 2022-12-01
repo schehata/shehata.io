@@ -14,6 +14,7 @@
         "@next/mdx": "^13.0.3",
         "gray-matter": "^4.0.3",
         "next": "latest",
+        "next-axiom": "^0.15.1",
         "react": "18.2.0",
         "react-dom": "18.2.0",
         "reading-time": "^1.5.0",

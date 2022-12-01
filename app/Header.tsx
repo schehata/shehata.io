@@ -19,7 +19,7 @@ export default function CustomHeader () {
 
         <nav className="flex list-none text-xl list-inside align-middle gap-4 flex-1 w-full justify-center items-center mx-auto">
           {nav.map((item) =>
-          <Link key={item.url} href={`/${item.url}`} as={`/${item.url}`} className="hidden md:block text-gray-600 hover:text-[#481515] shadow-red"
+          <Link key={item.url} href={item.url} as={item.url} className="hidden md:block text-gray-600 hover:text-[#481515] shadow-red"
             >{ item.title }</Link>
           )}
         </nav>

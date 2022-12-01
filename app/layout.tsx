@@ -6,6 +6,7 @@ config.autoAddCss = false;
 import Header from "./Header";
 import Footer from "./Footer";
 import Head from "next/head";
+export { reportWebVitals } from 'next-axiom';
 
 export default function RootLayout({
   children,
