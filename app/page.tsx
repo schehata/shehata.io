@@ -1,8 +1,10 @@
 import Profile from './Profile'
 import Post from './blog/Post'
 import { getSortedPosts } from '../lib/posts';
+import { log } from 'next-axiom';
 
 export default async function Home() {
+  log.info('testing next-axiom')
   const posts = await getSortedPosts(3)
 
   return (
