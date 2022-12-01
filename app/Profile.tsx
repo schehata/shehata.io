@@ -7,8 +7,8 @@ export default function Profile() {
   <section className="container mx-auto px-3 md:px-6 lg:px-12">
     <div className="flex flex-col md:flex-row gap-4 lg:gap-12 box-border">
       <section className="flex flex-col w-full md:w-2/3 md:text-right">
-        <h1 className="text-6xl md:text-7xl text-[#481515] mt-6">
-          <span className="title">صانع ومطور</span> برمجيات
+        <h1 className="text-6xl md:text-7xl text-[#481515] mt-6 mb-6">
+          <span className="title">صانع برمجيات</span>
         </h1>
         <p className="pt-1">
           هويت التقنية منذ الصغر، حيث كنت ألعب على الحاسوب و الآتاري وغيرهم.
@@ -46,6 +46,7 @@ export default function Profile() {
           <Image
             src={ProfilePic}
             alt="صورة شخصية"
+              priority={true}
             className="
               z-10
               absolute
@@ -63,7 +64,7 @@ export default function Profile() {
         </div>
       </section>
 
-      
+
     </div>
   </section>);
 }

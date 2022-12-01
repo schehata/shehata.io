@@ -1,0 +1,10 @@
+{
+    "configurations": [
+        {
+            "name": "build",
+            "type": "command",
+            "program": "npm",
+            "args": ["run", "build"],
+        }
+    ]
+}

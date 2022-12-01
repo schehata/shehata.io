@@ -1,6 +1,6 @@
 export default function Projects() {
   return (
-    <div className="custom-container">
+    <div className="container mx-auto px-3 md:px-6 lg:px-12">
       <h2>المشروعات</h2>
       <ul className="list-none">
         <li>

@@ -1,9 +1,8 @@
-import Post from '../../components/Post';
-import { getSortedPost } from '../../utils/mdx';
+import Post from './Post';
+import { getSortedPosts } from '../../lib/posts';
 
-export default async function BlogIndex() {
-  // const posts = await $content('/', {deep: true}).without(['body']).where({isDraft: {'$ne': true}}).sortBy('date', 'desc').fetch()
-  const posts = await getSortedPost()
+export default async function BlogIndex({ searchParams }: any) {
+    const posts = await getSortedPosts(20, searchParams.tag)
 
   return (
     <div className="container mx-auto px-3 md:px-6 lg:px-12">

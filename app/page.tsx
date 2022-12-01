@@ -1,20 +1,12 @@
-import Head from 'next/head'
-import Profile from '../components/Profile'
-import Post from '../components/Post'
-import { getSortedPost } from '../utils/mdx';
-
-export async function getPosts() {
-  const res = await fetch('https://api.example.com/posts')
-
-  return res.json()
-}
+import Profile from './Profile'
+import Post from './blog/Post'
+import { getSortedPosts } from '../lib/posts';
 
 export default async function Home() {
-  const posts = await getSortedPost(3)
+  const posts = await getSortedPosts(3)
 
   return (
     <section>
-
     <Profile />
 
     <section className="bg-primary py-12 px-3 md:px-6 lg:px-12">
@@ -33,9 +25,8 @@ export default async function Home() {
         <div className="flex flex-col md:flex-row w-full gap-6">
           <section className="md:w-2/3">
             <h2 className="">آخر كتاباتي</h2>
-            {posts.map((post) => 
+            {posts.map((post) =>
             <div key={post.slug}>
-              {/* <lazy-post :post="post" /> */}
               <Post post={post} />
             </div>
           )}

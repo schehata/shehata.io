@@ -37,94 +37,70 @@
       font-family: 'Noto Naskh Arabic';
       background-color: #fff;
     }
-  }
-  
-  .bg-primary {
-    background-color: #fcda68;
-    color: #444;
-  }
-  .bg-secondary {
-    background-color: #b9f2fe;
-    color: #444;
-  }
-  /* .nuxt-content h1,h2,h3,h4,h5,h6 {
-    color: #331212;
-    text-decoration: underline;
-    text-decoration-thickness: 4px;
-    text-decoration-color: brown;
-    text-underline-offset: 1rem;
-  } */
-  .nuxt-content h2,h3,h4,h5,h6 {
-    line-height: 2em;
-  }
-  
-  .nuxt-content p {
-    line-height: 2em;
-    padding-bottom: 12px;
-  }
-  
-  /* .nuxt-content.custom h1,h2,h3,h4,h5,h6 {
-    line-height: 3rem;
-    padding-bottom: 16px;
-  } */
-  
-  .nuxt-content img {
-    margin-top: 24px;
-    /* margin-bottom: 24px; */
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  @media (min-width: 640px) {
-    .nuxt-content img {
-      max-width: 50%;
+
+.bg-primary {
+        background-color: #fcda68;
+        color: #444;
+    }
+.bg-secondary {
+        background-color: #b9f2fe;
+        color: #444;
     }
   }
   
-  .nuxt-content pre {
-    direction: ltr;
-    text-align: left;
-    /* font-family: 'Roboto'; */
-    /* background-color: lightpink;
-    font-family: 'Roboto';
-    padding: 6px 12px;
-    margin-right: 6px;
-    margin-left: 6px; */
+
+
+  
+  
+  
+@layer components {
+      .social-icon {
+          @apply bg-gray-100 rounded-full w-9 h-9 pt-1.5 align-middle text-center text-xl text-gray-600;
+      }
+
+.md-content pre {
+          direction: ltr;
+          text-align: left;
+          /* font-family: 'Roboto'; */
+/* background-color: lightpink;
+font-family: 'Roboto';
+padding: 6px 12px;
+margin-right: 6px;
+margin-left: 6px; */
+      }
+
+.md-content a {
+          text-decoration: underline;
+          color: blue;
+      }
+
+.md-content p > code {
+          background-color: rgba(255, 161, 210, 0.60);
+          padding: 0.3em 0.5em;
+          text-align: left;
+          direction: ltr;
+          @apply rounded;
+      }
+
+.md-content figure {
+          margin-bottom: 1em;
+      }
+
+.md-content figcaption {
+          margin-left: auto;
+          margin-right: auto;
+          color: #777;
+          font-size: 11px;
+          text-align: center;
+          display: block;
+          font-weight: 600;
+      }
+
+.md-content figcaption::before {
+          content: '['
+      }
+
+.md-content figcaption::after {
+          content: ']'
+      }
   }
-  
-  .nuxt-content a {
-    text-decoration: underline;
-    color: blue;
-  }
-  
-  .nuxt-content p > code {
-    background-color: rgba(255, 161, 210, 0.15);
-    padding: 0.3em 0.5em;
-    text-align: left;
-    direction: ltr;
-    /* font-family: 'Roboto'; */
-  }
-  
-  .nuxt-content figure {
-    margin-bottom: 1em;
-  }
-  
-  .nuxt-content figcaption {
-    margin-left: auto;
-    margin-right: auto;
-    color: #777;
-    font-size: 11px;
-    text-align: center;
-    display: block;
-    font-weight: 600;
-  }
-  
-  .nuxt-content figcaption::before {
-    content: '['
-  }
-  
-  .nuxt-content figcaption::after {
-    content: ']'
-  }
-  
-  
